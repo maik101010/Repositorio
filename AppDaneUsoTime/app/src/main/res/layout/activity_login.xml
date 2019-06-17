@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.codigojoany.usotiempodane.Login"
+    android:padding="10sp"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="Iniciar sesión"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:splitMotionEvents="false"
+            android:textColor="#a72b46"
+            android:textColorHighlight="#a72b46"
+            android:textColorHint="#a72b46">
+
+
+            <EditText
+                android:id="@+id/etusuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawableLeft="@drawable/ic_action_user"
+                android:hint="Usuario(a)"
+
+                android:textColor="#000000"
+                android:textColorHighlight="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#a72b46"
+            android:textColorHighlight="#a72b46"
+            android:textColorHint="#a72b46">
+
+            <EditText
+                android:id="@+id/etcontraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_lock_closed"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColorHint="#ffffff"
+                android:textColorLink="@color/cardview_light_background"
+                android:textSize="20dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioButton
+            android:id="@+id/sesion"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="6dp"
+            android:hint="#a72b46"
+            android:text="Cerrar Sesión"
+            android:textColor="#a72b46"
+            android:textColorHighlight="#a72b46"
+            android:textColorLink="#a72b46" />
+
+
+        <Button
+            android:id="@+id/btningreso"
+            android:layout_width="287dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_action_key"
+            android:hint="ingresar"
+
+            android:textColorHint="#ffffff"
+            android:textSize="22sp"
+            android:theme="@style/BotonColores" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnregistro"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:hint="Crear cuenta"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/colorPrimary"
+        android:theme="@style/BotonColores"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo_dane"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

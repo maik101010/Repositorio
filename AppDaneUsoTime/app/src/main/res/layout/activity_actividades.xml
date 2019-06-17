@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo_dane"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Registro de actividades diarias"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnclm"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/clm"
+            android:text="Cuidado personal, limpieza y mantenimiento del hogar"
+            android:textColor="@android:color/background_light"
+            android:textSize="8sp"
+            android:theme="@style/BotonColores" />
+
+        <Button
+            android:id="@+id/btndesplazamiento"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+
+            android:drawableLeft="@drawable/desplazamiento"
+            android:text="Tiempos de       desplazamiento"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp"
+
+            android:theme="@style/BotonColores" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btnsalud"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/salud1"
+            android:text="Salud"
+
+            android:textColor="@android:color/background_light"
+            android:theme="@style/BotonColores" />
+
+        <Button
+            android:id="@+id/btnentretenimiento"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/entretenimiento"
+            android:text="Entretenimiento"
+            android:textColor="@android:color/background_light"
+            android:textSize="11sp"
+            android:theme="@style/BotonColores" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btnlabor"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+
+            android:textColor="@android:color/background_light"
+            android:drawableLeft="@drawable/trabajo"
+            android:text="Laborales"
+            android:theme="@style/BotonColores" />
+
+
+        <Button
+            android:id="@+id/btnOtra"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+
+            android:drawableLeft="@drawable/otra"
+            android:text="Otras Actividades"
+            android:textColor="@android:color/background_light"
+            android:textSize="11sp"
+            android:theme="@style/BotonColores" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btnestudio"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/estudio"
+            android:textColor="@android:color/background_light"
+            android:text="Estudio"
+            android:theme="@style/BotonColores" />
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+
+
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            android:gravity="center"
+
+            android:text="Volver"
+            android:textColor="@android:color/background_light"
+            android:theme="@style/BotonColores"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

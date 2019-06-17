@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo_dane"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.michael.appdaneusotiempo.Registro"
+        tools:showIn="@layout/activity_actividades_cml">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Actividades de entretenimiento"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnMuseo"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/cine"
+                    android:gravity="center"
+
+                    android:text="Ir a cine, teatro o museo"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:theme="@style/BotonColores" />
+                <Button
+                    android:id="@+id/btnTelefono"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/telefono"
+                    android:gravity="center"
+
+                    android:text="Hablar por teléfono"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp"
+                    android:theme="@style/BotonColores" />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnMusica"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/musica"
+                    android:gravity="center"
+
+                    android:text="Escuchar música"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:theme="@style/BotonColores" />
+
+                <Button
+                    android:id="@+id/btnCompras"
+
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/compras"
+
+                    android:text="Ir de compras"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+
+
+                <Button
+                    android:id="@+id/btnBares"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/bar"
+                    android:text="Ir a restaurantes, bares o eventos sociales"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:theme="@style/BotonColores" />
+
+                <Button
+                    android:id="@+id/btnInternet"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/internet"
+                    android:text="Ver programas de televisión y/o navegar por internet (con fines recreativos) "
+                    android:textColor="@android:color/background_light"
+                    android:textSize="8sp"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnDescansar"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/descansar"
+                    android:gravity="center"
+                    android:text="Descansar sin hacer otra actividad"
+
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:theme="@style/BotonColores" />
+
+
+                <Button
+                    android:id="@+id/btnReligion"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/religion"
+
+                    android:text="Actividades religiosas o espirituales"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:theme="@style/BotonColores" />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnDeporte"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/deporte"
+
+                    android:text="Practicar deporte o hacer ejercicio"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="10sp"
+                    android:theme="@style/BotonColores" />
+                <Button
+                    android:id="@+id/btnOtra"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+
+                    android:drawableLeft="@drawable/otra"
+                    android:textSize="10sp"
+                    android:text="Otras actividades de entretenimiento"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+
+
+                <Button
+                    android:id="@+id/btnVolver"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@android:drawable/ic_menu_revert"
+                    android:gravity="center"
+
+                    android:text="Volver"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+
+   </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

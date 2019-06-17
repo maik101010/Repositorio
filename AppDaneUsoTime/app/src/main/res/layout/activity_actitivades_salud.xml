@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        app:srcCompat="@drawable/logo_dane"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Actividades de salud"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnDiligencia"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/diligencias_medica"
+            android:text="Diligencias médicas"
+            android:gravity="center"
+
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/background_light"
+            android:theme="@style/BotonColores" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnReclamarMedicamentos"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+
+            android:drawableLeft="@drawable/rmedicamentos"
+            android:text="Reclamar medicamentos"
+
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/background_light"
+            android:theme="@style/BotonColores" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnTerapias"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+
+            android:drawableLeft="@drawable/ttratamientos"
+            android:text="Terapias y tratamientos"
+
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/background_light"
+            android:theme="@style/BotonColores" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnOtra"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+
+            android:drawableLeft="@drawable/otra"
+            android:text="Otra"
+
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/background_light"
+            android:theme="@style/BotonColores" />
+
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="183dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.20"
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            android:text="volver"
+            android:textColor="@android:color/background_light"
+
+            android:theme="@style/BotonColores"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>

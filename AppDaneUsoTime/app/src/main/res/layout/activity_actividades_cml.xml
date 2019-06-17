@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo_dane"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.michael.appdaneusotiempo.Registro"
+        tools:showIn="@layout/activity_actividades_cml">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linearLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Actividades de cuidado personal, limpieza y mantenimiento del hogar"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnDormir"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/dormir"
+                    android:gravity="center"
+
+                    android:text="Dormir"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+                <Button
+                    android:id="@+id/btnDespertar"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/despertar"
+
+                    android:text="Despertarse"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnLevantar"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/levantarse"
+                    android:gravity="center"
+
+                    android:text="Levantarse"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+                <Button
+                    android:id="@+id/btnBañar"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/banarse"
+
+                    android:text="Bañarse"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnArreglar"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/arreglarse"
+                    android:gravity="center"
+
+                    android:text="Arreglarse"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+                <Button
+                    android:id="@+id/btnJardineria"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/jardineria"
+
+                    android:text="Jardinería"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnMascota"
+
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/mascota"
+                    android:gravity="center"
+
+                    android:text="Cuidar mascota"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="13sp"
+                    android:theme="@style/BotonColores" />
+
+
+                <Button
+                    android:id="@+id/btnLavarPlatos"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/lavarplatos"
+
+                    android:text="Lavar platos"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnPlanchar"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/planchar"
+                    android:gravity="center"
+
+                    android:text="Planchar Ropa"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+                <Button
+                    android:id="@+id/btnLimpiarCasa"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/limpiarcasa"
+
+                    android:text="Limpiar vivienda"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnCuidar"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/cuidar_persona"
+                    android:gravity="center"
+
+                    android:text="Cuidar personas"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+                <Button
+                    android:id="@+id/btnPreparAlimentos"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/preparar_alimentos"
+
+                    android:text="Preparar alimentos"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnComer"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/comer"
+                    android:gravity="center"
+
+                    android:text="Comer"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+                <Button
+                    android:id="@+id/btnOtra"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/otra"
+
+                    android:text="Otra"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/btnVolver"
+                    android:layout_width="180dp"
+
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@android:drawable/ic_menu_revert"
+                    android:gravity="center"
+
+                    android:text="Volver"
+                    android:textColor="@android:color/background_light"
+                    android:theme="@style/BotonColores" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

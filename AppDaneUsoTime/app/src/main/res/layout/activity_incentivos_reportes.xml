@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo_dane" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="Productividad y reportes"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="La aplicación permitirá conocer la productividad que tiene como persona usuaria a través del reporte diario, semanal o mensual de las diferentes actividades que realiza durante el día.
+Como persona usuaria usted podrá comparar el uso de su tiempo frente a los resultados promedios de la ENUT."
+
+             android:textAlignment="center"
+             android:textSize="16sp" />
+
+     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Volver"
+            android:textColor="@android:color/background_light"
+            android:textSize="11sp"
+            android:theme="@style/BotonColores" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo_dane"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.michael.appdaneusotiempo.Registro"
+        tools:showIn="@layout/activity_actividades_cml">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="Descuentos"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Descuentos entre el 70% y 90% del valor total de los cursos de producción y difusión estadística ofrecidos por el Grupo Área de Innovación y aprendizaje GAIA del DANE.
+El descuento tendrá un periodo máximo a usar durante  el año de vigencia; de igual forma, los descuentos no pueden ser acumulables para diferentes vigencias, ni puede transferirse entre personas.
+Para poder acceder al descuento, las personas usuarias tendrán que utilizar la aplicación por un periodo mínimo de 3 meses.
+"
+             android:textAlignment="center"
+             android:textSize="16sp" />
+
+     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Volver"
+            android:textColor="@android:color/background_light"
+            android:textSize="11sp"
+            android:theme="@style/BotonColores" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
